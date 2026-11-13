@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thiệp điện tử chúc mừng Ngày Nhà giáo Việt Nam 20/11 – ETD Institute" />
+  <title>Thiệp 20/11 · Ngày Nhà Giáo Việt Nam · ETD Institute</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       SCENE CONTROLLER — Checkbox (pure CSS scene transition)
+       ============================================================ -->
+  <input type="checkbox" id="open-card" aria-label="Mở thiệp" />
+
+  <!-- ============================================================
+       SCENE 1 — GRAND OPENING
+       ============================================================ -->
+  <section class="scene-opening" aria-label="Màn hình chào mừng">
+
+    <!-- Background gradient layers -->
+    <div class="bg-layers" aria-hidden="true">
+      <div class="bg-base"></div>
+      <div class="bg-layer-1"></div>
+      <div class="bg-layer-2"></div>
+      <div class="bg-layer-3"></div>
+    </div>
+
+    <!-- Ambient light orbs -->
+    <div class="orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Gold border frame -->
+    <div class="gold-frame" aria-hidden="true"></div>
+    <div class="gold-frame-vert" aria-hidden="true"></div>
+
+    <!-- Floating particles — golden dust -->
+    <div class="particles" aria-hidden="true">
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+    </div>
+
+    <!-- Floating petals -->
+    <div class="petals" aria-hidden="true">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+    </div>
+
+    <!-- Main opening content -->
+    <div class="opening-content">
+
+      <!-- Top ornament -->
+      <div class="deco-ornament">
+        <span class="deco-ornament-dot"></span>
+        <span class="deco-ornament-line"></span>
+        <span class="deco-ornament-diamond"></span>
+        <span class="deco-ornament-line"></span>
+        <span class="deco-ornament-dot"></span>
+      </div>
+
+      <!-- Eyebrow label -->
+      <p class="opening-eyebrow">Viện Phát Triển Giáo Dục và Đào Tạo</p>
+
+      <!-- The great date reveal -->
+      <div class="date-display" role="heading" aria-level="1" aria-label="20 tháng 11">
+        <span class="date-num">20</span><!--
+        --><span class="date-sep">/</span><!--
+        --><span class="date-num">11</span>
+      </div>
+
+      <!-- Main title -->
+      <h2 class="opening-main-title">Ngày Nhà Giáo Việt Nam</h2>
+
+      <!-- Gold separator with lotus motif -->
+      <div class="gold-sep">
+        <span class="gold-sep-line"></span>
+        <span class="gold-sep-icon">✦</span>
+        <span class="gold-sep-line"></span>
+      </div>
+
+      <!-- Tagline -->
+      <p class="opening-tagline">
+        Một ngày đặc biệt dành cho những người<br />
+        gieo mầm tri thức và thắp sáng những cuộc đời.
+      </p>
+
+      <!-- CTA — Opens the card via checkbox trick -->
+      <label for="open-card" class="btn-open" role="button" tabindex="0">
+        <span class="btn-open-text">MỞ THIỆP TRI ÂN</span>
+        <span class="btn-shine" aria-hidden="true"></span>
+      </label>
+
+      <!-- Bottom ornament -->
+      <div class="deco-ornament deco-ornament-bottom">
+        <span class="deco-ornament-dot"></span>
+        <span class="deco-ornament-line"></span>
+        <span class="deco-ornament-diamond"></span>
+        <span class="deco-ornament-line"></span>
+        <span class="deco-ornament-dot"></span>
+      </div>
+
+    </div><!-- /opening-content -->
+
+  </section><!-- /scene-opening -->
+
+
+  <!-- ============================================================
+       CARD CONTENT — Scenes 2 · 3 · Logo · Footer
+       ============================================================ -->
+  <div class="card-content">
+
+    <!-- ======================================================
+         SCENE 2 — THE ART OF GRATITUDE
+         ====================================================== -->
+    <section class="scene-gratitude" aria-label="Lời tri ân">
+
+      <div class="gratitude-inner">
+
+        <p class="gratitude-eyebrow">Kính tặng những người thầy, người cô</p>
+
+        <!-- Decorative horizontal line -->
+        <div class="gratitude-deco-line">
+          <span></span>
+          <i></i>
+          <span></span>
+        </div>
+
+        <!-- Main title -->
+        <h2 class="gratitude-title">Người Gieo Ánh Sáng</h2>
+
+        <!-- Quote block -->
+        <div class="gratitude-quote-wrapper">
+          <blockquote class="gratitude-quote">
+            Có những người không chỉ dạy ta cách đọc một trang sách,<br />
+            mà còn dạy ta cách viết nên câu chuyện cuộc đời mình —<br />
+            bằng lòng dũng cảm, bằng sự tử tế, và bằng tình người.
+          </blockquote>
+        </div>
+
+        <!-- Bottom lotus ornament -->
+        <div class="gratitude-ornament">
+          <span class="ornament-long-line"></span>
+          <div class="ornament-lotus">
+            <span class="lotus-petal-css"></span>
+            <span class="lotus-petal-css"></span>
+            <span class="lotus-petal-css"></span>
+          </div>
+          <span class="ornament-long-line"></span>
+        </div>
+
+      </div>
+
+    </section><!-- /scene-gratitude -->
+
+
+    <!-- Scene divider -->
+    <div class="scene-divider" aria-hidden="true">
+      <span class="divider-dot"></span>
+      <span class="divider-diamond"></span>
+      <span class="divider-dot"></span>
+    </div>
+
+
+    <!-- ======================================================
+         SCENE 3 — THE HEART: ORIGINAL POEM
+         ====================================================== -->
+    <section class="scene-poem" aria-label="Bài thơ ngày Nhà giáo">
+
+      <div class="poem-container">
+
+        <!-- Top SVG lotus decoration -->
+        <svg class="poem-deco-top" width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Lotus petals — stylized line art -->
+          <path d="M60 55 C60 55 40 40 40 20 C40 10 50 5 60 15 C70 5 80 10 80 20 C80 40 60 55 60 55Z"
+                fill="none" stroke="rgba(200,153,59,0.45)" stroke-width="1"/>
+          <path d="M60 55 C60 55 25 42 20 22 C17 12 28 5 38 18 C40 8 50 5 60 15"
+                fill="none" stroke="rgba(200,153,59,0.30)" stroke-width="1"/>
+          <path d="M60 55 C60 55 95 42 100 22 C103 12 92 5 82 18 C80 8 70 5 60 15"
+                fill="none" stroke="rgba(200,153,59,0.30)" stroke-width="1"/>
+          <circle cx="60" cy="56" r="2" fill="rgba(200,153,59,0.5)"/>
+          <!-- Water line -->
+          <path d="M20 56 C35 52 50 58 60 56 C70 54 85 60 100 56"
+                fill="none" stroke="rgba(200,153,59,0.20)" stroke-width="1"/>
+        </svg>
+
+        <!-- Poem label -->
+        <p class="poem-label">Thơ sáng tác độc quyền · 20 / 11</p>
+
+        <!-- Poem title -->
+        <h3 class="poem-title">Người Đưa Đò Qua Sông Ánh Sáng</h3>
+
+        <!-- Author ornament line -->
+        <div class="poem-author-line">
+          <span></span>
+          <em>✦ &nbsp; Kính tặng các thầy, cô giáo &nbsp; ✦</em>
+          <span></span>
+        </div>
+
+        <!-- =================== POEM BODY =================== -->
+        <div class="poem-body" role="article" aria-label="Bài thơ Người Đưa Đò Qua Sông Ánh Sáng">
+
+          <!-- Khổ 1 -->
+          <div class="stanza">
+            <span class="stanza-line">Có người ngồi lặng bên dòng sông tri thức,</span>
+            <span class="stanza-line">Tay chèo đều — không tiếng sóng, không danh,</span>
+            <span class="stanza-line">Đưa chúng tôi qua bờ bên ánh sáng —</span>
+            <span class="stanza-line">Rồi quay về, một mình với dòng xanh.</span>
+          </div>
+
+          <!-- Separator -->
+          <div class="stanza-sep" aria-hidden="true">
+            <span></span><i></i><span></span>
+          </div>
+
+          <!-- Khổ 2 -->
+          <div class="stanza">
+            <span class="stanza-line">Thầy dạy con đọc tên từng vì sao nhỏ,</span>
+            <span class="stanza-line">Nhận ra hương đất thở sau cơn mưa,</span>
+            <span class="stanza-line">Những chữ trên bảng không chỉ là ký tự —</span>
+            <span class="stanza-line">Là bầu trời đầu tiên thầy mở ra.</span>
+          </div>
+
+          <!-- Separator -->
+          <div class="stanza-sep" aria-hidden="true">
+            <span></span><i></i><span></span>
+          </div>
+
+          <!-- Khổ 3 -->
+          <div class="stanza">
+            <span class="stanza-line">Có những mùa hoa không ai hỏi tên,</span>
+            <span class="stanza-line">Nở lặng thầm trong sân trường cũ kỹ,</span>
+            <span class="stanza-line">Như lời cô năm đó con còn bé —</span>
+            <span class="stanza-line">Đến hôm nay vẫn nở trong lòng ta.</span>
+          </div>
+
+          <!-- Separator -->
+          <div class="stanza-sep" aria-hidden="true">
+            <span></span><i></i><span></span>
+          </div>
+
+          <!-- Khổ 4 -->
+          <div class="stanza">
+            <span class="stanza-line">Con lớn rồi, bước xa vào đời rộng,</span>
+            <span class="stanza-line">Nhưng vẫn còn dấu tay thầy trên vai,</span>
+            <span class="stanza-line">Mỗi lần vấp — nghe tiếng thầy nhắc khẽ:</span>
+            <span class="stanza-line">"Đứng dậy đi — con đường vẫn còn dài."</span>
+          </div>
+
+          <!-- Separator -->
+          <div class="stanza-sep" aria-hidden="true">
+            <span></span><i></i><span></span>
+          </div>
+
+          <!-- Khổ 5 -->
+          <div class="stanza">
+            <span class="stanza-line">Tri thức không nằm im trong trang giấy,</span>
+            <span class="stanza-line">Mà sống trong ánh mắt thầy nhìn con —</span>
+            <span class="stanza-line">Một lần thôi — xác nhận trong yên lặng:</span>
+            <span class="stanza-line">"Con có thể. Con xứng đáng. Con ơi."</span>
+          </div>
+
+          <!-- Separator -->
+          <div class="stanza-sep" aria-hidden="true">
+            <span></span><i></i><span></span>
+          </div>
+
+          <!-- Khổ 6 -->
+          <div class="stanza">
+            <span class="stanza-line">Hôm nay con về gửi đến bến cũ,</span>
+            <span class="stanza-line">Lời cảm ơn chưa kịp nói bao giờ —</span>
+            <span class="stanza-line">Dòng sông ấy vẫn còn đang chảy mãi,</span>
+            <span class="stanza-line">Nhờ những người ngồi chèo giữa ban trưa.</span>
+          </div>
+
+        </div><!-- /poem-body -->
+
+        <!-- Closing ornament -->
+        <div class="poem-closing-line">
+          <span></span>
+          <em>✦ &nbsp; &nbsp; ✦ &nbsp; &nbsp; ✦</em>
+          <span></span>
+        </div>
+
+      </div><!-- /poem-container -->
+
+    </section><!-- /scene-poem -->
+
+
+    <!-- ======================================================
+         PERSONAL LOGO AREA
+         Replace logo.png with your own image file.
+         ====================================================== -->
+    <section class="logo-section" aria-label="Logo ETD Institute">
+
+      <p class="logo-section-label">Trân trọng gửi đến</p>
+
+      <!-- PERSONAL LOGO AREA — Logo container below -->
+      <div class="logo-container">
+        <div class="logo-glow-ring" aria-hidden="true"></div>
+        <img
+          src="logo.png"
+          alt="ETD Institute — Viện Phát Triển Giáo Dục và Đào Tạo"
+          class="logo-img"
+          loading="eager"
+        />
+      </div>
+
+      <p class="logo-name-text">ETD Institute</p>
+      <p class="logo-sub-text">Viện Phát Triển Giáo Dục và Đào Tạo</p>
+
+    </section><!-- /logo-section -->
+
+
+    <!-- ======================================================
+         FOOTER
+         ====================================================== -->
+    <footer class="card-footer" role="contentinfo">
+
+      <div class="footer-content">
+
+        <div class="footer-deco" aria-hidden="true">
+          <span class="footer-deco-line"></span>
+          <span class="footer-deco-diamond"></span>
+          <span class="footer-deco-line"></span>
+        </div>
+
+        <p class="footer-date-text">20 · 11</p>
+        <p class="footer-title-text">Ngày Nhà Giáo Việt Nam</p>
+
+        <p class="footer-wish">
+          Kính chúc quý thầy, quý cô mạnh khoẻ, hạnh phúc<br />
+          và luôn tràn đầy ngọn lửa yêu nghề, mến trò.
+        </p>
+
+        <p class="footer-bottom">
+          ETD Institute &nbsp;·&nbsp; 2024 &nbsp;·&nbsp; Thiệp điện tử 20 / 11
+        </p>
+
+      </div>
+
+    </footer><!-- /card-footer -->
+
+  </div><!-- /card-content -->
+
+</body>
+</html>
